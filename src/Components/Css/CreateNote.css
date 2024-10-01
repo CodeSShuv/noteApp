@@ -1,0 +1,85 @@
+.createNote{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(156, 156, 156, 0.116); */
+    background-color: rgba(165, 186, 206, 0.247);
+    z-index: 2;
+    
+
+}
+.form-area{
+    margin-top: -3em;
+}
+.inputs{
+    border: none;
+    height: 1.7rem;
+    width:31rem;
+    font-size: 1.3rem;
+    position:relative
+}
+.inputs:focus{
+    outline: none;
+}
+.input-holder{
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+    border-radius:1rem ;
+    position: relative;
+    z-index: 2;
+}
+#note-submit{
+    width: 100%;
+    background-color: rgb(131, 13, 13);
+    font-weight: bold;
+    color: ghostwhite;
+    margin-top:-1rem;
+}
+#btn-holder{
+    background-color: transparent;
+}
+#description{
+    resize: none;
+    height: 14rem;
+}
+label{
+    /* background-color: rgb(200, 200, 200); */
+    /* height: 10rem; */
+    width: 17%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: .3rem;
+    color: var(--near-maroon);
+    position: absolute;
+    font-size: 1.4rem;
+    top: 25%;
+    transition-property: all;
+    transition-duration: 300ms;
+    z-index: 3;
+}
+.input-holder:focus-within  label, #category-label{
+    top: 0rem;
+    background-color: white;
+    font-size:1rem ;
+}
+.category-label{}
+
+.inputs:valid + label{
+    top: 0rem;
+    background-color: white;
+    font-size:1rem ;
+}
+#category{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
